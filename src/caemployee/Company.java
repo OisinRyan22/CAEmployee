@@ -12,28 +12,29 @@ import java.util.Iterator;
  * @author ocean
  */
 public class Company {
+
     private String companyName;
     private ArrayList<Employee> staff;
-    
+
     public Company() {    //Default constructor
         this.companyName = "Business Gnomes Ltd";
         this.staff = new ArrayList<>();
     }
-    
+
     public Company(String companyName) {    //Overloaded constructor
         this.companyName = companyName;
         this.staff = new ArrayList<>();
     }
-    
+
     public void addNewStaff(Employee emp) {     // Method adding employee to staff array
         staff.add(emp);
     }
-    
+
     public int getStaffNum() {      //method for number of employees in staff array
         return staff.size();
     }
-    
-    public void listOfEmployees(int empNumThreshold) {
+
+    public void listOfEmployees(int empNumThreshold) {      //Method for giving employee list there employee number
         System.out.println("Employees with empNum > " + empNumThreshold + ":");
         Iterator<Employee> itr = staff.iterator();
         while (itr.hasNext()) {
@@ -42,6 +43,6 @@ public class Company {
                 System.out.println(emp.getName());
             }
         }
-        
+
     }
 }
