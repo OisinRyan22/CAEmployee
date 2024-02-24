@@ -5,6 +5,7 @@
 package caemployee;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  *
@@ -24,8 +25,23 @@ public class Company {
         this.staff = new ArrayList<>();
     }
     
-    public void addNewStaff(Employee emp) {
+    public void addNewStaff(Employee emp) {     // Method adding employee to staff array
         staff.add(emp);
     }
     
+    public int getStaffNum() {      //method for number of employees in staff array
+        return staff.size();
+    }
+    
+    public void listOfEmployees(int empNumThreshold) {
+        System.out.println("Employees with empNum > " + empNumThreshold + ":");
+        Iterator<Employee> itr = staff.iterator();
+        while (itr.hasNext()) {
+            Employee emp = itr.next();
+            if (emp.getEmpNum() > empNumThreshold) {
+                System.out.println(emp.getName());
+            }
+        }
+        
+    }
 }
