@@ -16,9 +16,22 @@ public class CAEmployee {
     public static void main(String[] args) {
         
         Employee emp1 = new Employee("Joe Bloggs", "jb@gmail.com");
-        Employee emp2 = new Employee("Ann banana", "ab@gmail.com");
+        Employee emp2 = new Employee("Ann Banana", "ab@gmail.com");
         Employee emp3 = new Employee("Tom Thumb", "tt@gmail.com");
         //List of employee objects
+        
+        Employee[] projectGroup = {emp1, emp2, emp3};  //Delaring arrays
+        
+        System.out.println("nextEmpNum value: " + Employee.getNextEmpNum()); //output of nextEmpNum value
+        
+        int m = 2; // variable m for comparison
+        
+        //Employees with empNum > m
+        System.out.println("Employees with empNum > " + m + ":");
+        for (Employee emp : projectGroup) {
+            if (emp.getEmpNum() > m) {
+                System.out.println(emp.getName());
+            }
+            }
+        }
     }
-    
-}
