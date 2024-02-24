@@ -4,10 +4,28 @@
  */
 package caemployee;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author ocean
  */
 public class Company {
+    private String companyName;
+    private ArrayList<Employee> staff;
+    
+    public Company() {    //Default constructor
+        this.companyName = "Business Gnomes Ltd";
+        this.staff = new ArrayList<>();
+    }
+    
+    public Company(String companyName) {    //Overloaded constructor
+        this.companyName = companyName;
+        this.staff = new ArrayList<>();
+    }
+    
+    public void addNewStaff(Employee emp) {
+        staff.add(emp);
+    }
     
 }
