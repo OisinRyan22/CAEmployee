@@ -20,11 +20,34 @@ public class Employee {
         this.empNum = nextEmpNum++;
         //Default values in constructor
     }
-    
+
     public Employee(String name, String email) {
         this.name = name;
-        this. email = email;
+        this.email = email;
         this.empNum = nextEmpNum++;
         //Constructor with parameters
+    }
+
+    //Accessor methods
+    public String getName() {
+        return name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public int getEmpNum() {
+        return empNum;
+    }
+
+    public void setEmail(String email) {        //Setter method
+        if (email.length() > 3) {
+            this.email = email;
+        } else {
+            System.out.println("Incorrect imput. Email must be more than 3 characters long");
+        }
+    }
+    
 }
 }
