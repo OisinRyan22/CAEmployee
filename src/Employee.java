@@ -8,9 +8,23 @@
  * @author ocean
  */
 public class Employee {
+
     private String name;
     private String email;
     private int empNum;
     private static int nextEmpNum = 1;
+
+    public Employee() {
+        this.name = "Unknown";
+        this.email = "unknown@example.com";
+        this.empNum = nextEmpNum++;
+        //Default values in constructor
+    }
     
+    public Employee(String name, String email) {
+        this.name = name;
+        this. email = email;
+        this.empNum = nextEmpNum++;
+        //Constructor with parameters
+}
 }
