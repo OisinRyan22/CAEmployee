@@ -50,7 +50,7 @@ public class Employee {
         }
     }
 
-    public static int getNextEmpnum() {
+    public static int getNextEmpNum() {
         return nextEmpNum;
     }
 }

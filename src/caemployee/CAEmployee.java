@@ -22,7 +22,7 @@ public class CAEmployee {
         
         Employee[] projectGroup = {emp1, emp2, emp3};  //Delaring arrays
         
-        System.out.println("nextEmpNum value: " + Employee.getNextEmpnum()); //output of nextEmpNum value
+        System.out.println("nextEmpNum value: " + Employee.getNextEmpNum()); //output of nextEmpNum value
         
         int m = 2; // variable m for comparison
         
