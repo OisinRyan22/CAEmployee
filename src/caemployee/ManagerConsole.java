@@ -20,7 +20,7 @@ public class ManagerConsole {
         Scanner sc = new Scanner(System.in);        //importing in scanner
         String inputUsername;
         String inputPassword;
-        
+
         //user prompts 
         System.out.println("Manager Only Login");
         System.out.print("Enter Username: ");
@@ -31,10 +31,20 @@ public class ManagerConsole {
         if (inputUsername.equals(UserName) && inputPassword.equals(Password)) {
             Company company = new Company();        //Checks if correct username and password are entered
 
-            System.out.println("New staff added: ");
-            Employee newEmp = new Employee("New Staff Member", "newstaffmember@live.com");
+            Employee emp1 = new Employee("Joe Bloggs", "jb@gmail.com");
+            Employee emp2 = new Employee("Ann Banana", "ab@gmail.com");
+            Employee emp3 = new Employee("Tom Thumb", "tt@gmail.com");
+            company.addNewStaff(emp1);
+            company.addNewStaff(emp2);
+            company.addNewStaff(emp3);
+            
+            
+            Employee newEmp = new Employee("James Hetfield", "jh@gmail.com");
             company.addNewStaff(newEmp);
+            System.out.println("New staff added: " + newEmp.getName());
             //For adding new staff members
+
+            company.listOfEmployees(0);
 
             System.out.println("Employed staff members: ");
             for (Employee emp : company.getStaff()) {
