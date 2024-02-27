@@ -29,6 +29,7 @@ public class Company {
 
     public void addNewStaff(Employee emp) {     // Method adding employee to staff array
         staff.add(emp);
+//        System.out.println("New staff member added: " + emp.getName());
     }
 
     public ArrayList<Employee> getStaff() {      //method for number of employees in staff array
