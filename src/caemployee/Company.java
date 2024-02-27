@@ -30,8 +30,8 @@ public class Company {
         staff.add(emp);
     }
 
-    public int getStaffNum() {      //method for number of employees in staff array
-        return staff.size();
+    public ArrayList<Employee> getStaff() {      //method for number of employees in staff array
+        return staff;
     }
 
     public void listOfEmployees(int empNumThreshold) {      //Method for giving employee list there employee number
