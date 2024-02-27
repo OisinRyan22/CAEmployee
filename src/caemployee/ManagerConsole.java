@@ -34,7 +34,7 @@ public class ManagerConsole {
             company.addNewStaff(newEmp);
             //For adding new staff members
 
-            System.out.println("Employed staff members: ");
+            System.out.println("Employed staff members: 3 ");
             for (Employee emp : company.getStaff()) {
                 System.out.println(emp.getName());
             }
