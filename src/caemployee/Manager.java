@@ -8,6 +8,7 @@ package caemployee;
  *
  * @author ocean
  */
+//Github Link https://github.com/OisinRyan22/CAEmployee
 public class Manager extends Employee {
 
     private String username;
@@ -19,19 +20,19 @@ public class Manager extends Employee {
         this.password = password;
     }
 
-    public String getUsername() {
+    public String getUsername() {           //Username getter method
         return username;
     }
 
-    public void setUsername(String username) {
+    public void setUsername(String username) {          //Username setter method
         this.username = username;
     }
 
-    public String getPassword() {
+    public String getPassword() {           //password getter method
         return password;
     }
 
-    public void setPassword(String password) {
+    public void setPassword(String password) {          //password setter method
         this.password = password;
 
     }

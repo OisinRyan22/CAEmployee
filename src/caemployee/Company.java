@@ -11,6 +11,7 @@ import java.util.Iterator;
  *
  * @author ocean
  */
+//Github Link https://github.com/OisinRyan22/CAEmployee
 public class Company {
 
     private String companyName;

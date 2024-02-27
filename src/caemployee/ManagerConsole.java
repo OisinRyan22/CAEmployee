@@ -17,10 +17,11 @@ public class ManagerConsole {
     private static final String Password = "smurf";
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);        //importing in scanner
         String inputUsername;
         String inputPassword;
-
+        
+        //user prompts 
         System.out.println("Manager Only Login");
         System.out.print("Enter Username: ");
         inputUsername = sc.nextLine();
@@ -28,7 +29,7 @@ public class ManagerConsole {
         inputPassword = sc.nextLine();
 
         if (inputUsername.equals(UserName) && inputPassword.equals(Password)) {
-            Company company = new Company();        //If succesful login
+            Company company = new Company();        //Checks if correct username and password are entered
 
             System.out.println("New staff added: ");
             Employee newEmp = new Employee("New Staff Member", "newstaffmember@live.com");
@@ -40,7 +41,7 @@ public class ManagerConsole {
                 System.out.println(emp.getName());
             }
         } else {
-            System.out.println("Access denied. Username or password not found");
+            System.out.println("Access denied. Username or password not found");   //error message for incorrect username and/or password
         }
     }
 }

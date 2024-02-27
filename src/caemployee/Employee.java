@@ -8,6 +8,7 @@ package caemployee;
  *
  * @author ocean
  */
+//Github Link https://github.com/OisinRyan22/CAEmployee
 public class Employee {
 
     private String name;
@@ -29,7 +30,7 @@ public class Employee {
         //Constructor with parameters
     }
 
-    //Accessor methods
+    //First 3 are Getter methods
     public String getName() {
         return name;
     }
@@ -50,7 +51,7 @@ public class Employee {
         }
     }
 
-    public static int getNextEmpNum() {
+    public static int getNextEmpNum() {         //returns the value of nextEmpnum
         return nextEmpNum;
     }
 }
