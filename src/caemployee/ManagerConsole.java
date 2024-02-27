@@ -10,6 +10,7 @@ import java.util.Scanner;
  *
  * @author ocean
  */
+//Github Link https://github.com/OisinRyan22/CAEmployee
 public class ManagerConsole {
 
     private static final String UserName = "Gnomeo";
